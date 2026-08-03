@@ -81,7 +81,7 @@ Keep a second SSH session open while testing key-only login - locking yourself o
 ### Step 3, Add brute-force, audit and auto-patch controls
 
 ```bash
-apt-get install -y fail2ban auditd unattended-upgrades
+sudo apt-get install -y fail2ban auditd unattended-upgrades
 printf "[sshd]\nenabled=true\nmaxretry=5\nbantime=3600\n" > /etc/fail2ban/jail.local
 echo "-w /etc/sudoers -p wa -k actions" >> /etc/audit/rules.d/hardening.rules
 systemctl enable --now fail2ban auditd
