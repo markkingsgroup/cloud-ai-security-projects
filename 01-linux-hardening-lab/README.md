@@ -99,6 +99,7 @@ r=[check("SSH root off","sshd -T|grep permitrootlogin","permitrootlogin no"),
 sys.exit(0 if all(r) else 1)
 ```
 <img width="637" height="181" alt="image" src="https://github.com/user-attachments/assets/e160fe11-1b68-4a91-9a1d-3297b19a4a76" />
+<img width="551" height="200" alt="image" src="https://github.com/user-attachments/assets/9a180bb6-c9aa-4675-8648-cc1c01c1112e" />
 
 ## 🧪 Done when
 
