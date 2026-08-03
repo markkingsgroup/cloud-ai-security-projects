@@ -59,7 +59,7 @@ Snapshot the VM ("clean-install") so you can roll back for a clean demo.
 Capture the weak defaults first so you can prove the improvement.
 
 ```bash
-sshd -T | grep -E "permitrootlogin|passwordauthentication"
+sudo sshd -T | grep -E "permitrootlogin|passwordauthentication"
 sudo ufw status
 systemctl is-active fail2ban auditd 2>/dev/null
 ```
