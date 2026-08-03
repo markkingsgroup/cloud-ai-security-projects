@@ -63,6 +63,7 @@ sudo sshd -T | grep -E "permitrootlogin|passwordauthentication"
 sudo ufw status
 systemctl is-active fail2ban auditd 2>/dev/null
 ```
+<img width="817" height="255" alt="image" src="https://github.com/user-attachments/assets/1a89beaa-e1f2-4e8e-bb11-839240fc16f6" />
 
 ### Step 2, Write the hardening script
 
